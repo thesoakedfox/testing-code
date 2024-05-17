@@ -1,5 +1,4 @@
 '''code to execute sql queries by Andi Dai 05/09'''
-#some change
 import sqlite3
 #importing
 
@@ -16,7 +15,8 @@ def execute():
         cursor.execute(sql)
         results = cursor.fetchall()
         #executing and fetching
-        print(results)
+        for poke in results:
+            print(poke)
         #printing results
 
 if __name__ == "__main__":
